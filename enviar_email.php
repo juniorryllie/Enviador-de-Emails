@@ -1,5 +1,9 @@
 <?php
 
-	mail('junior.ryllie@gmail.com','Assunto: Teste de Assunto','Corpo ou Menságem: Esta é a menságem enviada pelo meu programa');
+	$mail = 'junior.ryllie@gmail.com' ;
+	$assunto = $_post['assunto'] ;
+	$corpo = $_post['corpo'] ;
+	
+	mail($mail, $assunto, $corpo);
 
 ?>
